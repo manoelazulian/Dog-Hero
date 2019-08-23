@@ -3,29 +3,35 @@
   <%= render 'errors', object: pet %>
 
   <div class="field">
-      <%= f.label :name %><br />
-      <%= f.text_field :name %>
-    </div>
-    <div class="field">
-      <%= f.label :size %><br />
-      <%= f.text_field :size %>
-    </div>
-    <div class="field">
-      <%= f.label :age %><br />
-      <%= f.text_field :age %>
-    </div>
-    <div class="field">
-      <%= f.label :temper %><br />
-      <%= f.text_field :temper %>
-    </div>
-    <div class="field">
-      <%= f.label :castrated %><br />
-      <%= f.text_field :castrated %>
-    </div>
-    <div class="field">
-      <%= f.label :about %><br />
-      <%= f.text_field :about %>
-    </div>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :guardian %><br />
+    <%= f.select :guardian_id, Guardian.all.collect {|g| [g.name, g.id] }, prompt: 'Select a Guardian' %>
+  </div>
+
+  <div class="field">
+    <%= f.label :size %><br />
+    <%= f.text_field :size %>
+  </div>
+  <div class="field">
+    <%= f.label :age %><br />
+    <%= f.text_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :temper %><br />
+    <%= f.text_field :temper %>
+  </div>
+  <div class="field">
+    <%= f.label :castrated %><br />
+    <%= f.text_field :castrated %>
+  </div>
+  <div class="field">
+    <%= f.label :about %><br />
+    <%= f.text_field :about %>
+  </div>
 
   <div class="actions">
     <%= f.submit %>
