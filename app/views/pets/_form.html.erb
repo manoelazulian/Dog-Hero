@@ -1,0 +1,17 @@
+<%= form_with(model: pet, local: true) do |f| %>
+  
+  <%= render 'errors', object: pet %>
+
+  <div class="field">
+      <%= f.label :name %><br />
+      <%= f.text_field :name %>
+    </div>
+    <div class="field">
+      <%= f.label :size %><br />
+      <%= f.text_field :size %>
+    </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
