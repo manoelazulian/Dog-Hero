@@ -71,6 +71,6 @@ class GuardiansController < ApplicationController
     end
 
     def guardian_params
-        params.require(:guardian).permit(:name)
+        params.require(:guardian).permit(:name, :mail, :phone, :address, :about)
     end
 end
