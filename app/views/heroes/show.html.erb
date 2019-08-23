@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<p><%= @hero.name %></p>
+<p><%= @hero.mail %></p>
+<p><%= @hero.phone %></p>
+<p><%= @hero.address %></p>
+<p><%= @hero.about %></p>
+
+
+<%= link_to 'Edit', edit_hero_path(@hero) %> |
+<%= link_to 'Back', heroes_path %>
