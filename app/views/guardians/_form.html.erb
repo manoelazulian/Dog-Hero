@@ -1,0 +1,30 @@
+<%= form_with(model: guardian, local: true) do |f| %>
+  
+    <%= render 'errors', object: guardian %>
+  
+    <div class="field">
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+    </div>
+    <div class="field">
+        <%= f.label :mail %>
+        <%= f.text_field :mail %>
+    </div>
+    <div class="field">
+        <%= f.label :phone %>
+        <%= f.text_field :phone %>
+    </div>
+    <div class="field">
+        <%= f.label :address %>
+        <%= f.text_field :address %>
+    </div>
+    <div class="field">
+        <%= f.label :about %>
+        <%= f.text_field :about %>
+    </div>
+  
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+  <% end %>
+  

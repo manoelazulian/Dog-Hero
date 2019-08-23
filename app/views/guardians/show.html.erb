@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<p><%= @guardian.name %></p>
+<p><%= @guardian.mail %></p>
+<p><%= @guardian.phone %></p>
+<p><%= @guardian.address %></p>
+<p><%= @guardian.about %></p>
+
+
+<%= link_to 'Edit', edit_guardian_path(@guardian) %> |
+<%= link_to 'Back', guardians_path %>
