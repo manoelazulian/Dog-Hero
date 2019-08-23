@@ -1,8 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p><%= @pet.name %></p>
-
 <p><%= @pet.size %></p>
+<p><%= @pet.age %></p>
+<p><%= @pet.temper %></p>
+<p><%= @pet.castrated %></p>
+<p><%= @pet.about %></p>
 
 <%= link_to 'Edit', edit_pet_path(@pet) %> |
 <%= link_to 'Back', pets_path %>

@@ -14,6 +14,10 @@
       <tr>
         <td><%= pet.name %></td>
         <td><%= pet.size %></td>
+        <td><%= pet.age %></td>
+        <td><%= pet.temper %></td>
+        <td><%= pet.castrated %></td>
+        <td><%= pet.about %></td>
         <td><%= link_to 'Show', pet %></td>
         <td><%= link_to 'Edit', edit_pet_path(pet) %></td>
         <td><%= link_to 'Destroy', pet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
